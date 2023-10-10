@@ -3,9 +3,10 @@ import {CardTitle} from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import {useForm} from "@inertiajs/react";
 
-export function ResponseForm() {
+export function ResponseForm({id}) {
     const {data, setData, post, processing, errors} = useForm({
         response: '',
+        id: id
     })
 
     function submit(e) {

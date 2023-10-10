@@ -41,17 +41,16 @@ class ClaimController extends Controller
 //        ]);
 //    }
 
-    public function responseToClaimView(Request $request)
+    public function responseToClaimView($id)
     {
         return Inertia::render('ResponsePage', [
-            'claim' => Claim::find($request->id)
+            'id' => $id
         ]);
     }
 
     public function responseToClaim(Request $request)
     {
-        dd($request->claimId);
-        Claim::where('id', $request->claimId)->update(['response' => $request->response]);
+        Claim::where('id', $request->id)->update(['response' => $request->response]);
 
         return Redirect::route('claim.show');
     }

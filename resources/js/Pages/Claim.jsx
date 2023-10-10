@@ -13,7 +13,7 @@ export default function Claim({ auth, claims, date }) {
             <AddNewClaim />
             <CategoryBar claims={claims} />
             <Container className={s.container}>
-                {claims.map( (claim) => {
+                {claims.map((claim) => {
                     return <ClaimCard date={date} user={auth.user} props={claim} key={claim.id}/>
                 })}
             </Container>

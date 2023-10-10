@@ -14,7 +14,7 @@ export function ClaimCard({props, user, date}) {
                 <Card.Text><b>Email:</b> {props.user_email}</Card.Text>
                 <Card.Text><b>Message:</b> {props.message}</Card.Text>
                 {props.response ? <Card.Text><b>Manager response:</b> {props.response}</Card.Text> : ''}
-                {user['user_role'] === 'manager' ? <Button variant={'info'}><Link href={`/manager?claimId=${props.id}`}>Response</Link></Button> : null}
+                {user['user_role'] === 'manager' ? <Button variant={'info'}><Link href={`/manager/${props.id}`} >Response</Link></Button> : null}
             </Card.Body>
         </Card>
     );

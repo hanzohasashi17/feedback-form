@@ -6,7 +6,7 @@ import Button from "react-bootstrap/Button";
 import {CardTitle, Container} from "react-bootstrap";
 
 export function AddNewClaim() {
-    const {data, setData, post, processing, errors} = useForm({
+    const {data, setData, post, processing, errors, progress} = useForm({
         title: '',
         message: '',
         category: '',
@@ -57,7 +57,7 @@ export function AddNewClaim() {
                 </Row>
                 <Row className={'mt-2'}>
                     <Col xs="auto">
-                        <Button type="info" disabled={processing}>
+                        <Button type="info">
                             Send
                         </Button>
                     </Col>

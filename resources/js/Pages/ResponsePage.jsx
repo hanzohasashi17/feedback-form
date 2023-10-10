@@ -7,12 +7,12 @@ import {AddNewClaim} from "@/Components/AddNewClaim.jsx";
 import {CategoryBar} from "@/Components/CategoryBar.jsx"
 import {ResponseForm} from "@/Components/ResponseForm.jsx";
 
-export default function ResponsePage({ auth, claim }) {
+export default function ResponsePage({ auth, id }) {
     return (
         <AuthenticatedLayout user={auth.user} >
             <Head title="Manager page" />
             <Container className={s.container}>
-                <ResponseForm />
+                <ResponseForm id={id}/>
             </Container>
         </AuthenticatedLayout>
     );
