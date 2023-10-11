@@ -24,7 +24,7 @@ DB_PASSWORD=
 composer install
 ```
 
-А также
+А также (если уже установлен node.js)
 ```
 yarn install
 ```
