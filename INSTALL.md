@@ -43,7 +43,7 @@ php artisan migrate
 ```
 yarn build
 ```
-Экспортируем дамп в СУБД MySQL
+Импортируем дамп в СУБД MySQL
 
 
 
