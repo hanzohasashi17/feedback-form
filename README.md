@@ -12,7 +12,7 @@
 | email | manager@example.com |
 | password | 12345678 |
 
-[УСТАНОВКА](https://github.com/hanzohasashi17/feedback-form/tree/main/INSTALL.md)
+[УСТАНОВКА](https://github.com/hanzohasashi17/feedback-form/blob/main/INSTALL.md)
 
 **Задание для соискателя на должность WEB программист**
 
