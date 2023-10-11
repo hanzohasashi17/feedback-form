@@ -26,7 +26,7 @@ composer install
 
 А также
 ```
-yarn add
+yarn install
 ```
 
 ### Запуск
